@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :tweets
 
   resources :people
-
+  root 'people#home'
   get'/home' =>'people#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
